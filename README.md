@@ -3,8 +3,7 @@
 ## Overview
 This project is a fork of the original repository [agc-tp](https://github.com/aghozlane/agc-tp), aimed at developing a program to calculate the Operational Taxonomic Units (OTUs) from a set of amplicon sequences obtained from a mock sequencing. In this case, only bacterial sequences were amplified (and not fungal sequences), with 8 species expected from the data. Some details about the species are provided below:
 
-![Species details](data/Species.png)
-
+<img src="data/Species.png" alt="Species details" width="600" />
 
 The program will perform a **full-length sequence de-duplication**, **search for chimeric sequences**, and cluster the sequences based on an **Abundance Greedy Clustering algorithm**.
 
@@ -46,7 +45,7 @@ python agc/agc.py -i data/amplicon.fasta.gz -o results/otus.fasta
 This will run the OTU Calculator on the `data/amplicon.fasta.gz`, with a minimum sequence length of 400 and a minimum count of 10. The output will be saved in `results/otus.fasta`.
 
 
-## Testing Results with VSEARCH
+## Testing Results with VSEARCH 🧪
 
 To assess the quality of the OTU calculation, we will use VSEARCH to align the OTUs against the 16S reference sequences of our input data: `mock_16S.fasta`.
 
@@ -82,7 +81,6 @@ Matching unique query sequences: 116 of 117 (99.15%)
 OTU_1	Lactobacillus_fermentum_16S	100.0	425	0	0	1	425	1	1568	-1	0
 OTU_5	Salmonella_enterica_16S_1	100.0	425	0	0	1	425	1	1536	-1	0
 OTU_2	Staphylococcus_aureus_16S	100.0	425	0	0	1	425	1	1556	-1	0
-OTU_4	Bacillus_subtilis_16S	100.0	426	0	0	1	426	1	1558	-1	0
 ...
 ```
 

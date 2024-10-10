@@ -3,9 +3,9 @@
 ## Overview
 This project is a fork of the original repository [agc-tp](https://github.com/aghozlane/agc-tp), aimed at developing a program to calculate the Operational Taxonomic Units (OTUs) from a set of amplicon sequences obtained from a mock sequencing. In this case, only bacterial sequences were amplified (and not fungal sequences), with 8 species expected from the data. Some details about the species are provided below:
 
-<div style="text-align: center;">
-    <img src="data/Species.png" alt="Species details" width="600" />
-</div>
+<p align="center">
+    <img src="data/Species.png" alt="Species details" width="400" />
+</p>
 
 The program will perform a **full-length sequence de-duplication**, **search for chimeric sequences**, and cluster the sequences based on an **Abundance Greedy Clustering algorithm**.
 

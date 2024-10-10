@@ -21,7 +21,7 @@ conda activate otu_calculator
 2. Install Required Dependencies
 
 ```
-conda install -c conda-forge -c bioconda -c defaults nwalign3 pytest pylint pytest-cov numpy=1.19.5
+conda install -c conda-forge -c bioconda -c defaults nwalign3 pytest pylint pytest-cov loguru numpy=1.19.5
 ```
 
 ### Running the OTU Calculator

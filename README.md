@@ -59,7 +59,7 @@ conda install vsearch
 ```
 2. Run the alignment:
 ```
-vsearch  --usearch_global OTU.fasta  --db data/mock_16S.fasta --id 0.8 --blast6out resultat.tsv
+vsearch  --usearch_global results/otus.fasta  --db data/mock_16S.fasta --id 0.8 --blast6out resultat.tsv
 ```
 
 This will generate an output file resultat.tsv containing the alignment results.  
